@@ -175,7 +175,7 @@ bool special(std::string& word)
     auto ex = exceptions.find(word);
     if (ex != exceptions.end())
     {
-        word = ex->second.to_string();
+        word = std::string(ex->second);
         return true;
     }
 

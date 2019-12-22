@@ -30,7 +30,7 @@
 #include <thread>
 #endif
 
-#include <experimental/filesystem>
+#include <filesystem>
 #endif
 
 namespace meta
@@ -168,7 +168,7 @@ std::uintmax_t remove_all(const std::string& path)
     return remove_all(path_type{path.c_str()});
 }
 #else
-namespace fs = std::experimental::filesystem;
+namespace fs = std::filesystem;
 
 bool delete_file(const std::string& filename)
 {

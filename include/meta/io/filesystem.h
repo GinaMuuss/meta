@@ -17,7 +17,7 @@
 #include "meta/config.h"
 
 #if META_HAS_EXPERIMENTAL_FILESYSTEM
-#include <experimental/filesystem>
+#include <filesystem>
 #endif
 
 namespace meta
@@ -32,7 +32,7 @@ class filesystem_exception : public std::runtime_error
     using std::runtime_error::runtime_error;
 };
 #else
-using filesystem_exception = std::experimental::filesystem::filesystem_error;
+using filesystem_exception = std::filesystem::filesystem_error;
 #endif
 
 /**

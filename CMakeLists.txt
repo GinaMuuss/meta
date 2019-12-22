@@ -15,7 +15,7 @@ set(MeTA_VERSION
 
 # MeTA only requires C++11, but on all of our supported compilers at least
 # C++1y support exists, so we therefore set the standard to 14
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 

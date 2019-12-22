@@ -14,15 +14,15 @@
 #include "meta/hashing/hash.h"
 
 #if META_HAS_EXPERIMENTAL_STRING_VIEW
-#include <experimental/string_view>
+#include <string_view>
 namespace meta
 {
 namespace util
 {
 template <class Char, class Traits = std::char_traits<Char>>
-using basic_string_view = std::experimental::basic_string_view<Char, Traits>;
+using basic_string_view = std::basic_string_view<Char, Traits>;
 
-using string_view = basic_string_view<char>;
+using string_view = std::string_view;
 using u16string_view = basic_string_view<char16_t>;
 using u32string_view = basic_string_view<char32_t>;
 using wstring_view = basic_string_view<wchar_t>;
