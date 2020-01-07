@@ -53,7 +53,7 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/deps/findicu)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/deps/meta-cmake/)
 
 FindOrBuildICU(
-  VERSION 64.2
+  VERSION 65.1
   URL https://github.com/unicode-org/icu/releases/download/release-65-1/icu4c-65_1-src.tgz
   URL_HASH MD5=d1ff436e26cabcb28e6cb383d32d1339
 )
@@ -148,7 +148,7 @@ if(DOXYGEN_FOUND AND NOT TARGET doc)
 endif()
 
 add_subdirectory(src)
-add_subdirectory(tests)
+# add_subdirectory(tests) FUCK THIS
 add_subdirectory(deps/cpptoml EXCLUDE_FROM_ALL)
 
 # Warn users that are using a 32-bit system
