@@ -38,7 +38,7 @@ endif()
 cmake_push_check_state()
 
 # Work around CMake not propagating the standard flag down to the compiler
-set(CMAKE_REQUIRED_FLAGS "${CMAKE_REQUIRED_FLAGS} ${CMAKE_CXX14_STANDARD_COMPILE_OPTION}")
+set(CMAKE_REQUIRED_FLAGS "${CMAKE_REQUIRED_FLAGS} ${CMAKE_CXX17_STANDARD_COMPILE_OPTION}")
 
 # Check if there is no build type set. If meta itself is the root project,
 # compile it in release mode instead. If we aren't the root project, just

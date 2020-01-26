@@ -1,6 +1,6 @@
 [submodule "deps/cpptoml"]
 	path = deps/cpptoml
-	url = https://github.com/skystrife/cpptoml.git
+	url = https://github.com/JinaJita/cpptoml.git
 	branch = master
 [submodule "deps/libsvm-modules"]
 	path = deps/libsvm-modules
@@ -16,4 +16,4 @@
 	url = https://github.com/joakimkarlsson/bandit.git
 [submodule "deps/meta-cmake"]
 	path = deps/meta-cmake
-	url = https://github.com/meta-toolkit/meta-cmake.git
+	url = https://github.com/JinaJita/meta-cmake.git
