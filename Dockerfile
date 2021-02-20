@@ -2,7 +2,6 @@ FROM ubuntu:focal
 COPY . /meta
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install -y gcc-9 g++-9 cmake libicu-dev git libjemalloc-dev zlib1g-dev libboost-all-dev
-RUN apt install -y gcc-9 g++-9
 ENV CC=gcc-9
 ENV CXX=g++-9
 RUN mkdir /meta/build
