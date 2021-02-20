@@ -1,6 +1,6 @@
 [submodule "deps/cpptoml"]
 	path = deps/cpptoml
-	url = https://github.com/GinaMuuss/cpptoml.git
+	url = git@github.com:GinaMuuss/cpptoml.git
 	branch = master
 [submodule "deps/libsvm-modules"]
 	path = deps/libsvm-modules
